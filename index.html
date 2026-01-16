@@ -124,15 +124,15 @@
             box-shadow: 0 8px 12px rgba(0,0,0,0.2);
         }
 
-     .equipment-image {
-    width: 100%;
-    height: 400px;    /* Changed from 200px to 250px */
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
+        .equipment-image {
+            width: 100%;
+            height: 400px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
 
         .equipment-info {
             padding: 1.5rem;
@@ -165,44 +165,47 @@
         }
 
         /* Mobile-specific styles - kicks in for screens under 768px wide */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;  /* Smaller header on mobile */
-    }
-    
-    .tagline {
-        font-size: 1rem;
-    }
-    
-    .owners-container {
-        gap: 1rem;  /* Less gap on mobile */
-    }
-    
-    .owner {
-        min-width: 200px;
-    }
-    
-    .equipment-grid {
-        grid-template-columns: 1fr;  /* Single column on mobile */
-        gap: 1.5rem;
-    }
-    
-    .equipment-image {
-        height: 250px;  /* Smaller images on mobile */
-    }
-}
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .tagline {
+                font-size: 1rem;
+            }
+            
+            .owners-container {
+                gap: 1rem;
+            }
+            
+            .owner {
+                min-width: 200px;
+            }
+            
+            .equipment-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .equipment-image {
+                height: 200px;  /* Shorter on mobile */
+            }
+        }
 
-/* Very small phones - under 480px */
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-    
-    .equipment-section {
-        padding: 2rem 1rem;
-    }
-}
-
+        /* Very small phones - under 480px */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            .equipment-section {
+                padding: 2rem 1rem;
+            }
+            
+            .equipment-image {
+                height: 180px;  /* Even shorter on small phones */
+            }
+        }
     </style>
 </head>
 <body>
@@ -260,7 +263,7 @@
                 </div>
                 <div class="equipment-info">
                     <h3>Plate Compactor</h3>
-                    <p>Plate Compactor 60, need more details  from on the tag</p>
+                    <p>Plate Compactor 60, need more details from on the tag</p>
                     <span class="view-details">View Details →</span>
                 </div>
             </a>
@@ -270,7 +273,7 @@
                     <img src="images/Enclosed Trailer.jpg" alt="EnclosedTrailer" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <div class="equipment-info">
-                    <h3>EnclosedTrailer</h3>
+                    <h3>Enclosed Trailer</h3>
                     <p>10ft long 5ft wide enclosed trailer</p>
                     <span class="view-details">View Details →</span>
                 </div>
@@ -281,7 +284,7 @@
                     <img src="images/Livestock Trailer.jpg" alt="LivestockTrailer" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <div class="equipment-info">
-                    <h3>LivestockTrailer</h3>
+                    <h3>Livestock Trailer</h3>
                     <p>Livestock Trailer</p>
                     <span class="view-details">View Details →</span>
                 </div>
@@ -292,7 +295,7 @@
                     <img src="images/Flatbed Trailer.jpg" alt="FlatbedTrailer" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <div class="equipment-info">
-                    <h3>FlatbedTrailer</h3>
+                    <h3>Flatbed Trailer</h3>
                     <p>16ft Flatbed Trailer</p>
                     <span class="view-details">View Details →</span>
                 </div>
@@ -303,8 +306,8 @@
                     <img src="images/Wood Splitter 2.jpg" alt="Woodsplitter" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <div class="equipment-info">
-                    <h3>Woodsplitter</h3>
-                    <p> 20 Ton Wood Splitter</p>
+                    <h3>Wood Splitter</h3>
+                    <p>20 Ton Wood Splitter</p>
                     <span class="view-details">View Details →</span>
                 </div>
             </a>
@@ -315,7 +318,7 @@
                 </div>
                 <div class="equipment-info">
                     <h3>Transit</h3>
-                    <p> Spectra Self Leveling Laser Transit</p>
+                    <p>Spectra Self Leveling Laser Transit</p>
                     <span class="view-details">View Details →</span>
                 </div>
             </a>
@@ -326,12 +329,10 @@
                 </div>
                 <div class="equipment-info">
                     <h3>12 inch Miter Saw</h3>
-                    <p> Dewalt 12 in Miter Saw</p>
+                    <p>Dewalt 12 in Miter Saw</p>
                     <span class="view-details">View Details →</span>
                 </div>
             </a>
-
-            
 
         </div>
     </section>
@@ -341,5 +342,4 @@
         <p>&copy; 2026 Clare Equipment Rental. All rights reserved.</p>
     </footer>
 </body>
-
 </html>
