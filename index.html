@@ -163,6 +163,46 @@
             padding: 1.5rem;
             margin-top: 3rem;
         }
+
+        /* Mobile-specific styles - kicks in for screens under 768px wide */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;  /* Smaller header on mobile */
+    }
+    
+    .tagline {
+        font-size: 1rem;
+    }
+    
+    .owners-container {
+        gap: 1rem;  /* Less gap on mobile */
+    }
+    
+    .owner {
+        min-width: 200px;
+    }
+    
+    .equipment-grid {
+        grid-template-columns: 1fr;  /* Single column on mobile */
+        gap: 1.5rem;
+    }
+    
+    .equipment-image {
+        height: 250px;  /* Smaller images on mobile */
+    }
+}
+
+/* Very small phones - under 480px */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .equipment-section {
+        padding: 2rem 1rem;
+    }
+}
+
     </style>
 </head>
 <body>
