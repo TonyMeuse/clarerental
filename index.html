@@ -3,7 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clare Equipment Rental</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Clare Equipment Rental | Construction & Contractor Equipment Rentals in Clare, Nova Scotia</title>
+    <meta name="description" content="Clare Equipment Rental offers quality construction and contractor equipment rentals in Clare, Nova Scotia. Excavators, trailers, power tools, welders, cement mixers and more. Daily rentals available. Contact Alex or Anthony today.">
+    <meta name="keywords" content="equipment rental Clare NS, construction equipment rental Nova Scotia, excavator rental Clare, trailer rental Clare, power tool rental Nova Scotia, welder rental, cement mixer rental, Clare Nova Scotia equipment, contractor equipment Clare">
+    <meta name="author" content="Clare Equipment Rental">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Location/Geographic Tags -->
+    <meta name="geo.region" content="CA-NS">
+    <meta name="geo.placename" content="Clare, Nova Scotia">
+    
+    <!-- Open Graph Tags (for social media sharing) -->
+    <meta property="og:title" content="Clare Equipment Rental - Quality Equipment for Every Job">
+    <meta property="og:description" content="Construction and contractor equipment rentals in Clare, Nova Scotia. Excavators, trailers, power tools and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://clarerental.ca">
+    <meta property="og:locale" content="en_CA">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CSY222HLX4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-CSY222HLX4');
+    </script>
+    
+    <!-- Schema.org Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Clare Equipment Rental",
+      "description": "Quality construction and contractor equipment rentals serving Clare, Nova Scotia and surrounding areas",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Clare",
+        "addressRegion": "NS",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "44.3378",
+        "longitude": "-66.1211"
+      },
+      "telephone": ["(902) 307-2596", "(902) 769-8866"],
+      "priceRange": "$$",
+      "url": "https://clarerental.ca",
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "44.3378",
+          "longitude": "-66.1211"
+        },
+        "geoRadius": "50000"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Equipment Rental Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Excavator Rental"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Trailer Rental"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Power Tool Rental"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Welder Rental"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    
     <style>
         * {
             margin: 0;
@@ -38,6 +132,13 @@
             font-size: 1.2rem;
             color: #f0f0f0;
             font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+        
+        .location {
+            font-size: 1rem;
+            color: #e0e0e0;
+            margin-top: 0.5rem;
         }
 
         /* Owner Contact Section */
@@ -174,6 +275,10 @@
                 font-size: 1rem;
             }
             
+            .location {
+                font-size: 0.9rem;
+            }
+            
             .owners-container {
                 gap: 1rem;
             }
@@ -213,6 +318,7 @@
     <header>
         <h1>CLARE EQUIPMENT RENTAL</h1>
         <p class="tagline">Quality Equipment for Every Job</p>
+        <p class="location">Serving Clare, Nova Scotia & Surrounding Areas</p>
     </header>
 
     <!-- Owners Contact Section -->
